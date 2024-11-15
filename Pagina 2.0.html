@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Streets Shirts - Catálogo</title>
+</head>
+<style>
+ body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #ebed80;
+        color: rgb(17, 0, 85);
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: rgb(29, 1, 105);
+        text-decoration: none;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    section {
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid #ccc;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #f1f1f1;
+    }
+
+    .columnas {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .columna {
+        flex: 1;
+        margin: 0 10px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .catalogo {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .camiseta {
+        border: 1px solid #ccc;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .camiseta img {
+        width: 100%;
+        height: auto;
+    }
+
+    .camiseta h3 {
+        margin: 10px 0;
+    }
+
+    .camiseta p {
+        color: #555;
+    }
+
+    .boton {
+        background-color: #29aaff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .boton:hover {
+        background-color: #007bb5;
+    }
+
+    @media (max-width: 768px) {
+        .columnas {
+            flex-direction: column;
+        }
+
+        .columna {
+            margin: 10px 0;
+        }
+
+        .catalogo {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+        
+</style>
+<body>
+    <header>
+        <h1>Streets Shirts</h1>
+        <nav>
+            <ul>
+                <li><a href="#seccion1">Inicio</a></li>
+                <li><a href="#seccion2">Catálogo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="seccion1">
+            <h2>Bienvenidos a Streets Shirts</h2>
+            <p>En <strong>Streets Shirts</strong>, nuestra misión es ofrecerte camisetas únicas que capturan la esencia del arte urbano y la cultura de la calle. Cada diseño está inspirado en las tendencias más modernas, con un toque de originalidad que solo nosotros podemos ofrecer. Queremos que te sientas parte de algo exclusivo y auténtico.</p>
+
+            <h3>Nuestros Productos</h3>
+            <p>Contamos con una amplia variedad de camisetas que van desde los diseños más atrevidos y modernos hasta opciones más clásicas, pero siempre con un toque de estilo urbano. Ya sea que busques algo llamativo para salir con amigos o una camiseta cómoda para el día a día, tenemos algo para ti.</p>
+
+            <h3>Nuestra Visión</h3>
+            <p>Nos esforzamos por ser una marca que conecte con las personas que aprecian el arte, la cultura urbana y la moda de la calle. Nuestro objetivo es ofrecerte productos de alta calidad, con diseños que te permitan expresarte de manera auténtica y única.</p>
+
+            <h3>Por qué elegir Streets Shirts</h3>
+            <ul>
+                <li><strong>Diseños Exclusivos:</strong> Trabajamos con artistas urbanos y diseñadores independientes para ofrecer productos que no encontrarás en ningún otro lado.</li>
+                <li><strong>Comodidad y Estilo:</strong> Nuestras camisetas están confeccionadas con materiales de alta calidad, pensadas para garantizarte la mejor comodidad sin sacrificar el estilo.</li>
+                <li><strong>Compromiso con el Medio Ambiente:</strong> Estamos comprometidos con prácticas sostenibles en la fabricación de nuestras prendas.</li>
+            </ul>
+
+        <section id="seccion2">
+            <h2>Catálogo de Camisetas</h2>
+            <p>Descubre nuestra colección de camisetas únicas, perfectas para todos los gustos y estilos.</p>
+            
+            <!-- Contenedor de camisetas -->
+            <div class="catalogo">
+                <!-- Camiseta 1 -->
+                <div class="camiseta">
+                    <img src="https://i.pinimg.com/736x/3a/17/2e/3a172e70db490096bf7a653cfffb3334.jpg" alt="Camiseta 1">
+                    <h3>Camiseta Clásica</h3>
+                    <p>Camiseta de algodón 100% con diseño gráfico exclusivo para un estilo único.</p>
+                    <p class="precio">$30.000</p>
+                </div>
+                <!-- Camiseta 2 -->
+                <div class="camiseta">
+                    <img src="https://m.media-amazon.com/images/I/71DIo0cTcSL._AC_UY580_.jpg" alt="camiseta 2">
+                    <h3>Camiseta inspirada en los años 80</h3>
+                    <p>Camiseta de algodón 100% con diseño ambientado en los 80</p>
+                    <p class="precio">$24.000</p>
+                </div>
+                <!-- Camiseta 3 -->
+                <div class="camiseta">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8T2afK4yKHcAqD3OL6v30D8tGqE-UGtusVw&s" alt="Camiseta 3">
+                    <h3>Camiseta Minimalista</h3>
+                    <p>Camiseta de diseño minimalista, ideal para cualquier ocasión.</p>
+                    <p class="precio">$29.000</p>
+                </div>
+                <!-- Camiseta 4 -->
+                <div class="camiseta">
+                    <img src="https://cdn.koaj.co/204102-big_default/camiseta-manga-corta-con-estampado-de-metallica.jpg" alt="Camiseta 4">
+                    <h3>Camiseta de Banda</h3>
+                    <p>Camiseta con un diseño exclusivo inspirado en tus bandas favoritas.</p>
+                    <p class="precio">$29.000</p>
+                </div>
+                    <!-- Camiseta 5 -->
+                <div class="camiseta">
+                    <img src="https://cdn.koaj.co/230520-big_default/camiseta-oversize-para-hombre-manga-corta.jpg" alt="camiseta 5">
+                    <h3>Camiseta Deportiva</h3>
+                    <p>Camiseta de algodón 100% </p>
+                    <p class="precio">$35.000</p>
+                </div>
+                <!-- Camiseta 6 -->
+                <div class="camiseta">
+                    <img src="https://cdn.koaj.co/217418-big_default/camiseta-femenina-hombro-rodado-manga-corta-con-estampado-en-frente-de-mickey-disney.jpg" alt="camiseta 6">
+                    <h3>Camiseta de personajes animados</h3>
+                    <p>Camiseta de algodón 100% con estampada con tus caricaturas favoritas</p>
+                    <p class="precio">$32.000</p>
+                </div>
+                <!-- Camiseta 7 -->
+                <div class="camiseta">
+                    <img src="https://cdn.koaj.co/230548-big_default/camiseta-oversize-manga-corta-con-estampado-en-frente-de-bob-sponja.jpg" alt="camiseta 7">
+                    <h3>Camiseta con diseño de Bob Esponja</h3>
+                    <p>Camiseta de algodón 100% manga corta con diseño de Bob Esponja </p>
+                    <p class="precio">$42.000</p>
+                </div>
+                <!-- Camiseta 8 -->
+                <div class="camiseta">
+                    <img src="https://cdn.koaj.co/201885-big_default/camiseta-manga-corta-azul-oscura-cuello-v-con-estampados-estilo-college.jpg" alt="camiseta 8">
+                    <h3>Camiseta Basica</h3>
+                    <p>Camiseta de algodón 100% con cuello V, ideal para cualquier ocasion</p>
+                    <p class="precio">$30.000</p>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="contacto">
+        <section id="seccion2">
+            <h2>Contáctanos</h2>
+            <p>Si tienes alguna pregunta o deseas saber más sobre nuestras camisetas, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte.</p>
+               <ul>
+                <li><strong>Email:</strong> atencionalcliente@streetsshirts.com</li>
+                <li><strong>Teléfono:</strong> +57 321 456 789</li>
+                <li><strong>Dirección:</strong> Calle 6a 57-25, Bogota,Colombia</li>
+               </ul>
+    </footer>
+</body>
+</html>
